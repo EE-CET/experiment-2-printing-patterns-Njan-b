@@ -1,5 +1,26 @@
 import java.util.Scanner;
 
 public class PatternPrinting {
-    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        // Print stars horizontally WITHOUT extra space at end
+        for (int i = 0; i < n; i++) {
+            if (i == 0)
+                System.out.print("*");
+            else
+                System.out.print(" *");
+        }
+        System.out.println();
+
+        // Print stars vertically
+        for (int i = 0; i < n; i++) {
+            System.out.println("*");
+        }
+    }
 }
+
+
+    
+
